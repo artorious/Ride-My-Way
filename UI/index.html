@@ -5,24 +5,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ride my Way | Carpool | Ride sharing</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="static/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" 
+    href="static/main.css" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+<div class="page">
   <header>
     <h1>RideMyWay</h1>
     <p>
-      A carpooling web application that provides drivers with the ability to create 
-      ride offers and passengers to join available ride offers
+      A carpooling web application that provides drivers with the ability to 
+      create ride offers and passengers to join available ride offers.
     </p>
-    <nav>
-      <a href="#">Driver Sign In</a> |
-      <a href="#">User Sign In</a>
-      <a href="#">
-        <img src="static/avatar.png" alt="Default user avatar">
-      </a>
-    </nav>
   </header>
+  <hr>
+  <nav>
+    <a href="#">Driver Sign In</a> |
+    <a href="#">User Sign In</a>
+    <a href="#">
+      <img src="static/avatar.png" alt="Default user avatar">
+    </a>
+  </nav>
+  <article>
+    <div>
+      <h3>What we're about</h3>
+      <p>
+        <strong>RideMyWay</strong> enables commuters to reach out to vetted drivers 
+        who are willing to offer carpooling services on their way to work. 
+      </p>
+    </div>
+  </article>
   <hr>
   <div class="container">
     <form action="#">
@@ -33,7 +45,8 @@
             <label for="username">Username:</label>
           </div>
           <div class="col-75">
-            <input type="text" id="username" name="username" placeholder="johnsmith" required autofocus>
+            <input type="text" id="username" name="username" 
+              placeholder="johnsmith" required autofocus>
           </div>
         </div>
         <div class="row">
@@ -41,7 +54,9 @@
             <label for="userPassword">Password:</label>
           </div>
           <div class="col-75">
-            <input id="userPassword" type="password" name="user_password" autocomplete="off" required autofocus placeholder="*******************">
+            <input id="userPassword" type="password" name="user_password" 
+              autocomplete="off" required autofocus 
+              placeholder="*******************">
           </div>
         </div>
         <div class="row">
@@ -50,10 +65,16 @@
       </fieldset>
     </form>
     <div>
-      <p>Don't have an account? <a href="#">Sign Up here</a> for <strong>FREE</strong></p>
+      <p>
+        Don't have an account? 
+        <a href="#">Sign Up here</a> 
+        for <strong>FREE</strong>
+      </p>
       <p><a href="#">Forgot Password?</a></p>
     </div>
   </div>
+  <hr>
   <footer>&copy;RideMyWay 2018.<br><a href="#">Contact Us.</a></footer>
+</div>
 </body>
 </html>
