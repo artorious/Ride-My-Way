@@ -7,7 +7,7 @@ html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 
                 'Lucida Sans', Arial, sans-serif;   
     background-color: white;
-    color: midnightblue;
+    color: black;
     margin: 5px;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 header {   
-    background-color: midnightblue;
+    background-color: black;
     color: skyblue;
     border: 5px solid skyblue;
     text-align: left; 
@@ -41,7 +41,7 @@ article {
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px;
-    border: 1px solid midnightblue;
+    border: 1px solid black;
     border-radius: 4px;
     resize: vertical;
 }
@@ -52,7 +52,7 @@ label {
 }
 
 input[type=submit], select {
-    background-color: midnightblue;
+    background-color: black;
     color: skyblue;
     padding: 12px 20px;
     border: none;
@@ -63,11 +63,11 @@ input[type=submit], select {
 
 input[type=submit]:hover {
     background-color: white;
-    color: midnightblue;
+    color: black;
 }
 
 footer {
-    background-color: midnightblue;
+    background-color: black;
     color: skyblue; 
     text-align: center;   
 }
