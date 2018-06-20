@@ -38,7 +38,7 @@ article {
     padding: 20px;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=tel], input[type=password] {
     width: 100%;
     padding: 12px;
     border: 1px solid black;
@@ -53,6 +53,7 @@ label {
 
 input[type=submit], select {
     background-color: black;
+    font-size: 100%;
     color: skyblue;
     padding: 12px 20px;
     border: none;
@@ -74,6 +75,34 @@ footer {
 
 footer a {
     color: skyblue;
+}
+
+table {
+    border-spacing: 1px;
+    width: 100%;
+    border-collapse: separate;
+}
+
+th {
+    background-color: black;
+    color: skyblue;;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px;
+}
+
+td {
+    border: 1px solid grey;
+}
+
+tr:nth-child(odd) {
+    background-color: skyblue;
+}
+
+tr:hover {
+    background-color: grey;
 }
 
 .page {
