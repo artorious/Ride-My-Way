@@ -53,7 +53,8 @@ label {
 
 input[type=submit], select {
     background-color: black;
-    color: skyblue;
+    color: white;
+    font-size: 100%;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
