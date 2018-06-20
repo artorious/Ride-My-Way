@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ride my Way | Carpool | Ride sharing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" 
+    href="static/main.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>RideMyWay</h1>
+    <p>
+      A carpooling web application that provides drivers with the ability to 
+      create ride offers and passengers to join available ride offers.
+    </p>
+  </header>
+  <hr>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="index.html">User Sign In</a>
+    <a href="#">
+      <img src="static/avatar.png" alt="Default user avatar">
+    </a>
+  </nav>
+  <article>
+    <div>
+      <h3>Register New Driver.</h3>
+    </div>
+  </article>
+  <hr>
+  <div class="container">
+    <form action="admin_page.html">
+      <fieldset>
+        <legend>Driver registraion</legend>
+        <div class="row">
+          <div class="col-25">
+            <label for="firstName">First Name:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="name" name="name" placeholder="John" 
+              required autofocus
+            >    
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lastName">Last Name:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="name" name="name" placeholder="Smith" 
+              required autofocus
+            >    
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="username">Username:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="username" name="user_name" 
+              placeholder="johnsmith" required autofocus
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="liscenceNo">Liscence No:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="name" name="name" placeholder="A00G123456" 
+              required autofocus
+            >    
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="userPassword">Password:</label>
+          </div>
+          <div class="col-75">
+            <input id="userPassword" type="password" name="user_password" 
+              autocomplete="off" required autofocus placeholder="********"
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="CofirmPassword">Confirm Password:</label>
+          </div>
+          <div class="col-75">
+            <input id="CofirmPassword" type="password" name="confirm_password" 
+              autocomplete="off" required autofocus placeholder="********"
+            >
+          </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Sign In">
+        </div>
+      </fieldset>
+    </form>
+    
+  </div>
+  <hr>
+  <footer>&copy;RideMyWay 2018.<br><a href="#">Contact Us.</a></footer>
+</div>
+</body>
+</html>
