@@ -155,6 +155,18 @@ button:hover {
     clear: both;
 }
 
+.update-button {
+    width: 100%;
+    background-color: black;
+    color: skyblue;
+    font-size: 100%;
+}
+
+.update-button:hover {
+    background-color: skyblue;
+    color: black;
+}
+
 /* Handle screens under 600px - Stack columns */
 @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {
