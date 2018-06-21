@@ -38,8 +38,17 @@
   <div class="long-x-axis">
     <table>
       <tr>
-        <th colspan="7">Available/Open Rides</th>
+        <th colspan="7">Available/Open Rides by drivers in our network</th>
       </tr>
+      <td colspan="7">
+          <form action="#">
+            <label for="filterRidesByDriver">Customize the available rides to display - Sort by Drivers:</label>
+            <select name="filterRidesByDriver" id="filterRidesByDriver" onchange="">
+              <option value="allDrivers" selected>Rides from all Drivers</option>
+              <option value="networkDrivers">Rides from drivers in your network only</option>
+            </select>
+          </form>
+        </td>
       <tr>
         <th>Date</th>
         <th>Ride ID</th>

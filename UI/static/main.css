@@ -58,7 +58,8 @@ input[type=submit], select {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    float: right;   
+    float: right;  
+    font-size: 100%; 
 }
 
 input[type=submit]:hover {
@@ -84,11 +85,12 @@ table {
 
 th {
     background-color: black;
-    color: skyblue;;
+    color: skyblue;
+    
 }
 
 th, td {
-    text-align: left;
+    text-align: center;
     padding: 5px;
 }
 
@@ -96,7 +98,7 @@ td {
     border: 1px solid grey;
 }
 
-tr:nth-child(odd) {
+tr:nth-child(even) {
     background-color: skyblue;
 }
 
