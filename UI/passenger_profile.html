@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ride my Way | Carpool | Ride sharing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" 
+    href="static/main.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>RideMyWay</h1>
+    <p>
+      A carpooling web application that provides drivers with the ability to 
+      create ride offers and passengers to join available ride offers.
+    </p>
+  </header>
+  <hr>
+  <nav>
+    <a href="#">Back to Rides</a> |
+    <a href="index.html">Sign out</a>
+    <a href="#">
+      <img src="static/avatar.png" alt="Default user avatar">
+    </a>
+  </nav>
+    <h3>{Username} - Profile page</h3>
+  <hr>
+  <table class="long-x-axis">
+    <tr>
+      <th>Account Details</th>
+      <th>
+          <a href="#">
+            <button type="button" class="update-button">
+              Update Account Details
+            </button>
+          </a>
+        </th>
+    </tr>
+    
+    <tr>
+      <td>Username</td>
+      <td>Wamathai</td>
+    </tr>
+    <tr>
+      <td>First Name</td>
+      <td>Jesus</td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td>Wamathai</td>
+    </tr>
+    <tr>
+      <td>Mobile No.</td>
+      <td>0727161173</td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td>jesus@email.com</td>
+    </tr>
+  </table>
+  <hr>
+  <h3>Current/Active Rides</h3>
+  <hr>
+  <table class="long-x-axis">
+    <th colspan="3">Active Rides - Click on Driver's Name to call</th>
+    <tr>
+      <th>Driver's Name</th>
+      <th>Pickup Location</th>
+      <th>Date</th>
+    </tr>
+    <tr>
+      <td><a href="tel:+254-770-771-164">Thomas</a> </td>
+      <td>Homeland</td>
+      <td>01-01-2018</td>
+    </tr>
+    <tr>
+      <td><a href="tel:+254-727-161-173">Dickson</a></td>
+      <td>Maxland</td>
+      <td>02-01-2018</td>
+    </tr>
+    <tr>
+      <td><a href="#">Harrison</a></td>
+      <td>Thika Rd Mall</td>
+      <td>03-01-2018</td>
+    </tr>
+    <tr>
+      <select onchange="" name="rideCancelation">
+          <option value="noCancelation" selected>Select here to cancel a requested ride</option>
+          <option value="cancelThomas">Thomas</option>
+          <option value="cancelDickson">Dickson</option>
+          <option value="cancelHarrison">Harrison</option>
+        </select>
+    </tr>
+    <tr>
+      <select onchange="" name="likeDriver">
+          <option selected>Select to add a driver to your network</option>
+          <option value="likeThomas">Thomas</option>
+          <option value="likeDickson">Dickson</option>
+          <option value="likeHarrison">Harrison</option>
+        </select>
+    </tr>
+  </table>
+  <hr>
+  <h3>Passenger History</h3>
+  <hr>
+  <table class="long-x-axis">
+    <th colspan="3">Passenger History log</th>
+    <tr>
+      <th>Passenger's Name</th>
+      <th>Pickup Location</th>
+      <th>Date</th>
+    </tr>
+    <tr>
+      <td>Dickson</td>
+      <td>Alsops</td>
+      <td>01-12-2017</td>
+    </tr>
+    <tr>
+      <td>Thomas</td>
+      <td>Roysambu</td>
+      <td>29-11-2017</td>
+    </tr>
+    <tr>
+      <td>Joseph</td>
+      <td>Kahawa Sukari</td>
+      <td>27-11-2017</td>
+    </tr>
+    <tr>
+      <td>Judas</td>
+      <td>Wendani</td>
+      <td>11-11-2017</td>
+    </tr>
+  </table>
+  <hr>
+  <footer>&copy;RideMyWay 2018.<br><a href="#">Contact Us.</a></footer>
+</div>
+</body>
+</html>
