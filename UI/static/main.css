@@ -53,7 +53,7 @@ label {
 
 input[type=submit], select {
     background-color: black;
-    color: white;
+    color: skyblue;
     font-size: 100%;
     padding: 12px 20px;
     border: none;
@@ -90,7 +90,7 @@ th {
 }
 
 th, td {
-    text-align: left;
+    text-align: center;
     padding: 5px;
 }
 

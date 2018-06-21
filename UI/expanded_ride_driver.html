@@ -26,43 +26,36 @@
       <img src="static/avatar.png" alt="Default user avatar">
     </a>
   </nav>
-  <div class="row">
-    <div class="col-25">
-      <select name="rideStatus" id="rideStatus" onchange="">
-        <option value="openRide" selected>Status: Open</option>
-        <option value="closedRide">Status: Closed</option>
-      </select>
-    </div>
-  </div>
+  <h3>Ride Details - Expanded View</h3>
   <hr>
   <table class="long-x-axis">
-    <th colspan="2">Ride Details</th>
+    <th colspan="2">Ride Offer Details</th>
     <tr>
-      <th>Date Scheduled</th>
+      <td>Date Scheduled</td>
       <td>01-01-2018</td>
     </tr>
     <tr>
-      <th>Ride ID</th>
+      <td>Ride ID</td>
       <td>#1</td>
     </tr>
     <tr>
-      <th>Driver</th>
+      <td>Driver</td>
       <td>arthur</td>
     </tr>
     <tr>
-      <th>Departure Point</th>
+      <td>Departure Point</td>
       <td>Thika Rd Mall</td>
     </tr>
     <tr>
-      <th>Departure Time</th>
+      <td>Departure Time</td>
       <td>07:00AM</td>
     </tr>
     <tr>
-      <th>Final Destination</th>
+      <td>Final Destination</td>
       <td>Ruaraka</td>
     </tr>
     <tr>
-      <th>Route to take</th>
+      <td>Route to take</td>
       <td>Eastern By-pass</td>
   </table>
   <hr>
@@ -118,6 +111,15 @@
       </td>
     </tr>
   </table>
+  <hr>
+  <div class="row">
+    <div>
+      <select name="rideStatus" id="rideStatus" onchange="">
+        <option value="openRide" selected>Ride Status: Open</option>
+        <option value="closedRide">Ride Status: Closed</option>
+      </select>
+    </div>
+  </div> 
   <hr>
   <footer>&copy;RideMyWay 2018.<br><a href="#">Contact Us.</a></footer>
 </div>
