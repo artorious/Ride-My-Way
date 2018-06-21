@@ -58,7 +58,8 @@ input[type=submit], select {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    float: right;   
+    float: right;
+    font-size: 100%;  
 }
 
 input[type=submit]:hover {
@@ -88,7 +89,7 @@ th {
 }
 
 th, td {
-    text-align: left;
+    text-align: center;
     padding: 5px;
 }
 
@@ -96,7 +97,7 @@ td {
     border: 1px solid grey;
 }
 
-tr:nth-child(odd) {
+tr:nth-child(even) {
     background-color: skyblue;
 }
 
@@ -133,6 +134,18 @@ tr:hover {
     content: "";
     display: table;
     clear: both;
+}
+
+.update-button {
+    width: 100%;
+    background-color: black;
+    color: skyblue;
+    font-size: 100%;
+}
+
+.update-button:hover {
+    background-color: skyblue;
+    color: black;
 }
 
 /* Handle screens under 600px - Stack columns */

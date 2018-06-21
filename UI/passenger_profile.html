@@ -26,10 +26,20 @@
       <img src="static/avatar.png" alt="Default user avatar">
     </a>
   </nav>
-    <h3>Profile page</h3>
+    <h3>{Username} - Profile page</h3>
   <hr>
   <table class="long-x-axis">
-    <th colspan="2">Account Details</th>
+    <tr>
+      <th>Account Details</th>
+      <th>
+          <a href="#">
+            <button type="button" class="update-button">
+              Update Account Details
+            </button>
+          </a>
+        </th>
+    </tr>
+    
     <tr>
       <th>Username</th>
       <td>Wamathai</td>
@@ -52,7 +62,6 @@
     </tr>
   </table>
   <hr>
-  
   <hr>
   <table class="long-x-axis">
     <th colspan="3">Active Rides - Click on Driver's Name to call</th>
@@ -76,7 +85,24 @@
       <td>Thika Rd Mall</td>
       <td>01-01-2018</td>
     </tr>
+    <tr>
+      <select onchange="" name="rideCancelation">
+          <option value="noCancelation" selected>Select here to cancel a requested ride</option>
+          <option value="cancelThomas">Thomas</option>
+          <option value="cancelDickson">Dickson</option>
+          <option value="cancelHarrison">Harrison</option>
+        </select>
+    </tr>
+    <tr>
+      <select onchange="" name="likeDriver">
+          <option selected>Select to add a driver to your network</option>
+          <option value="likeThomas">Thomas</option>
+          <option value="likeDickson">Dickson</option>
+          <option value="likeHarrison">Harrison</option>
+        </select>
+    </tr>
   </table>
+  <hr>
   <hr>
   <table class="long-x-axis">
     <th colspan="3">Passenger History log</th>
