@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ride my Way | Carpool | Ride sharing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" 
+    href="static/main.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>RideMyWay</h1>
+    <p>
+      A carpooling web application that provides drivers with the ability to 
+      create ride offers and passengers to join available ride offers.
+    </p>
+  </header>
+  <hr>
+  <nav>
+    <a href="#">Back to profile</a> |
+    <a href="#">Sign Out</a>
+    <a href="#">
+      <img src="static/avatar.png" alt="Default user avatar">
+    </a>
+  </nav>
+  <article>
+    <div>
+      <h3>{username}</h3>
+      <p>Enter a new <strong>username</strong>, 
+        <strong>email</strong>, <strong>liscence no.</strong> 
+        or leave blank to retain current details</p>
+    </div>
+  </article>
+  <hr>
+  <div class="container">
+    <form action="#">
+      <fieldset>
+        <legend>Change Account Details</legend>
+        <div class="row">
+          <div class="col-25">
+            <label for="username">New Username:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="username" name="username" 
+              placeholder="johnsmith" autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="userEmail">New Email:</label>
+          </div>
+          <div class="col-75">
+            <input type="email" id="userEmail" name="userEmail" 
+              placeholder="johnsmith@email.com" autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="userLiscence">New Liscence No:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="userLiscence" name="userLiscence" 
+              placeholder="A00B35665" autofocus>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+              <label for="userPassword">Old Password:</label>
+            </div>
+            <div class="col-75">
+              <input id="userPassword" type="password" name="userPassword" 
+                autocomplete="off" required autofocus 
+                placeholder="*******************">
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="newUserPassword">New Password:</label>
+          </div>
+          <div class="col-75">
+            <input id="newUserPassword" type="password" name="newUserPassword" 
+              autocomplete="off" required autofocus 
+              placeholder="*******************">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="confirmNewUserPassword"> Confirm New Password:</label>
+          </div>
+          <div class="col-75">
+            <input id="newUserPassword" type="password" name="confirmNewUserPassword" 
+              autocomplete="off" required autofocus 
+              placeholder="*******************">
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Discard">
+          <input type="submit" value="Update">       
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <hr>
+  <footer>&copy;RideMyWay 2018.<br><a href="#">Contact Us.</a></footer>
+</div>
+</body>
+</html>
