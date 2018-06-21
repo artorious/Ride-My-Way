@@ -20,27 +20,34 @@
   </header>
   <hr>
   <nav>
-    <a href="driver_signin.html">Driver Sign In</a> |
-    <a href="#">User Sign In</a>
+    <a href="index.html">Home</a> |
+    <a href="index.html">User Sign In</a>
     <a href="#">
       <img src="static/avatar.png" alt="Default user avatar">
     </a>
   </nav>
   <article>
     <div>
-      <h3>Want to carpool? Join our network.</h3>
+      <h3>Welcome Back.</h3>
       <p>
-        <strong>RideMyWay</strong> enables commuters to reach out to a large 
-        pool of vetted drivers who are willing to offer carpooling services 
-        on a daily basis. 
+        <strong>Thank you</strong> for your dedication to keep our network active.
       </p>
     </div>
   </article>
   <hr>
   <div class="container">
-    <form action="passenger_landing.html" id="userSignIn">
+    <form action="drivers_landing.html">
       <fieldset>
-        <legend>Catch a ride today - Login as passenger</legend>
+        <legend>Driver Login Details</legend>
+        <div class="row">
+          <div class="col-25">
+            <label for="driverId">Driver ID:</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="driverId" name="driverId" 
+              placeholder="A00Z12345" required autofocus>
+          </div>
+        </div>
         <div class="row">
           <div class="col-25">
             <label for="username">Username:</label>
@@ -67,9 +74,8 @@
     </form>
     <div>
       <p>
-        Don't have an account? 
-
-        <a href="passenger_signup.html">Sign Up here</a> 
+        Don't have a drivers account? 
+        <a href="driver_sign_up.html">Sign Up here</a> 
         for <strong>FREE</strong>
       </p>
       <p><a href="#">Forgot Password?</a></p>

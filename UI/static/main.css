@@ -38,12 +38,13 @@ article {
     padding: 20px;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=email], input[type=tel] {
     width: 100%;
     padding: 12px;
     border: 1px solid black;
     border-radius: 4px;
     resize: vertical;
+    font-size: 100%;
 }
 
 label {
@@ -53,13 +54,15 @@ label {
 
 input[type=submit], select {
     background-color: black;
+    font-size: 100%;
     color: skyblue;
+    font-size: 100%;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     float: right;
-    font-size: 100%;  
+    font-size: 100%;   
 }
 
 input[type=submit]:hover {
@@ -85,7 +88,7 @@ table {
 
 th {
     background-color: black;
-    color: skyblue;;
+    color: skyblue;
 }
 
 th, td {
@@ -103,6 +106,22 @@ tr:nth-child(even) {
 
 tr:hover {
     background-color: grey;
+}
+
+button {
+    width: 50%;
+    background-color: black;
+    color: skyblue;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
 }
 
 .page {
@@ -161,4 +180,9 @@ tr:hover {
     .container {
         width: 75%;        
     }
+}
+
+/* Handle wide tables */
+.long-x-axis {
+    overflow-x: auto;
 }
