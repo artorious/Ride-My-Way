@@ -58,7 +58,8 @@ input[type=submit], select {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    float: right;   
+    float: right; 
+    font-size: 100%;  
 }
 
 input[type=submit]:hover {
