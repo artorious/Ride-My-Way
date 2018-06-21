@@ -27,6 +27,7 @@ On a  terminal (Linux):
 * Clone the repository `git clone https://github.com/artorious/Ride-My-Way.git`
 
 * Run `git checkout UI-dev-features`
+* Run `git UI-dev-features`
 
 * Run `cd Ride-My-Way/UI/`
 
