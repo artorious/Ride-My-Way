@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ride my Way | Carpool | Ride sharing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" 
+    href="static/main.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>RideMyWay</h1>
+    <p>
+      A carpooling web application that provides drivers with the ability to 
+      create ride offers and passengers to join available ride offers.
+    </p>
+  </header>
+  <hr>
+  <nav>
+    <a href="index.html">Sign Out</a> |
+    <a href="#">Profile</a>
+    <a href="#">
+      <img src="static/avatar.png" alt="Default user avatar">
+    </a>
+  </nav>
+  <article>
+    <div>
+      <h3>Want to request a ride?</h3>
+      <p>
+        Click on <strong>Ride ID</strong> of any ride below to make a request.
+      </p>
+    </div>
+  </article>
+  <hr>
+  <div class="long-x-axis">
+    <table>
+      <tr>
+        <th colspan="7">Available/Open Rides by drivers in our network</th>
+      </tr>
+      <td colspan="7">
+          <form action="#">
+            <label for="filterRidesByDriver">Customize the available rides to display - Sort by Drivers:</label>
+            <select name="filterRidesByDriver" id="filterRidesByDriver" onchange="">
+              <option value="allDrivers" selected>Rides from all Drivers</option>
+              <option value="networkDrivers">Rides from drivers in your network only</option>
+            </select>
+          </form>
+        </td>
+      <tr>
+        <th>Date</th>
+        <th>Ride ID</th>
+        <th>Driver</th>
+        <th>Departure Point</th>
+        <th>Departure Time</th>
+        <th>Final Destination</th>
+        <th>Route to take</th>
+      </tr>
+      <tr>
+        <th>01-01-2018</th>
+        <td><a href="#">#1</a></td>
+        <td>arthur</td>
+        <td>Thika Rd Mall</td>
+        <td>07:00 AM</td>
+        <td>Upper Hill</td>
+        <td>Eastern By-pass</td>
+      </tr>
+      <tr>
+        <th>01-01-2018</th>
+        <td><a href="#">#2</a></td>
+        <td>Kevin</td>
+        <td>Diamond Plaza</td>
+        <td>08:00 AM</td>
+        <td>Westlands</td>
+        <td>Peponi Rd</td>
+      </tr>
+      <tr>
+        <th>01-01-2018</th>
+        <td><a href="#">#3</a></td>
+        <td>Kimani</td>
+        <td>Athi River</td>
+        <td>05:00 AM</td>
+        <td>Kikuyu Town</td>
+        <td>Northern By-pass</td>
+      </tr>
+      <tr>
+        <th>01-01-2018</th>
+        <td><a href="#">#4</a></td>
+        <td>Karanja</td>
+        <td>Umoja I</td>
+        <td>05:00 AM</td>
+        <td>Nairobi CBD</td>
+        <td>Jogoo Rd</td>
+      </tr>
+      <tr>
+        <th>02-01-2018</th>
+        <td><a href="#">#5</a></td>
+        <td>Kendick</td>
+        <td>Thika</td>
+        <td>10:00 AM</td>
+        <td>Ngong</td>
+        <td>Western By-pass</td>
+      </tr>
+      <tr>
+        <th>03-01-2018</th>
+        <td><a href="#">#6</a></td>
+        <td>Collins</td>
+        <td>Murang'a Town</td>
+        <td>07:00 AM</td>
+        <td>Nairobi CBD</td>
+        <td>Mai-Mahiu</td>
+      </tr>
+    </table>
+  </div>
+  <hr>
+  <footer>&copy;RideMyWay 2018.<br><a href="#">Contact Us.</a></footer>
+</div>
+</body>
+</html>
