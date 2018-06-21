@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Ride my Way | Carpool | Ride sharing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" 
+    href="static/main.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>RideMyWay</h1>
+    <p>
+      A carpooling web application that provides drivers with the ability to 
+      create ride offers and passengers to join available ride offers.
+    </p>
+  </header>
+  <hr>
+  <nav>
+    <a href="passenger_landing.html">Back to Rides</a> |
+    <a href="index.html">Sign out</a>
+    <a href="#">
+      <img src="static/avatar.png" alt="Default user avatar">
+    </a>
+  </nav>
+  <article>
+    <h3>Want to make a ride request?</h3>
+    <p>
+      <strong>Fill out</strong> your contact details and pick-up location to request a ride.
+    </p>
+  </article>
+  <hr>
+  <table class="long-x-axis">
+    <th colspan="2">Ride Details</th>
+    <tr>
+      <td>Date Scheduled</td>
+      <td>01-01-2018</td>
+    </tr>
+    <tr>
+      <td>Ride ID</td>
+      <td>#1</td>
+    </tr>
+    <tr>
+      <td>Driver</td>
+      <td>arthur</td>
+    </tr>
+    <tr>
+      <td>Departure Point</td>
+      <td>Thika Rd Mall</td>
+    </tr>
+    <tr>
+      <td>Departure Time</td>
+      <td>07:00AM</td>
+    </tr>
+    <tr>
+      <td>Final Destination</td>
+      <td>Ruaraka</td>
+    </tr>
+    <tr>
+      <td>Route to take</td>
+      <td>Eastern By-pass</td>
+  </table>
+  <hr>
+  <div class="container">
+    <form action="passenger_landing.html">
+      <fieldset>
+        <legend>Pick up. Details</legend>
+        <div class="row">
+          <div class="col-25">
+            <label for="passengerPhone">Phone Number:</label>
+          </div>
+          <div class="col-75">
+            <input type="tel" id="passengerPhone" name="passengerPhone" 
+              placeholder="0727161173" required autofocus>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="passengerLocation">Pick-up Location:</label>
+          </div>
+          <div class="col-75">
+            <input id="passengerLocation" type="text" name="passengerLocation" 
+              autocomplete="off" required autofocus 
+              placeholder="Where will you be at? Specific location">
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Request ride">
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <hr>
+  <footer>&copy;RideMyWay 2018.<br><a href="#">Contact Us.</a></footer>
+</div>
+</body>
+</html>
