@@ -99,7 +99,7 @@ td {
     border: 1px solid grey;
 }
 
-tr:nth-child(odd) {
+tr:nth-child(even) {
     background-color: skyblue;
 }
 
