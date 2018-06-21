@@ -54,6 +54,7 @@ label {
 
 input[type=submit], select {
     background-color: black;
+    font-size: 100%;
     color: skyblue;
     font-size: 100%;
     padding: 12px 20px;
