@@ -6,10 +6,17 @@ Ride-My-Way App is a carpooling application that provides drivers with the abili
 For Users - Passengers
 
 * Create/Register an account and log in.
+* View the details of a ride offer
+* Request to join a ride.
+* Sorted ride listing - View only and respond to ride offers from drivers in their network on the application
+* Get real time notifications when a request is accepted or rejected
 
 For Users - Drivers
 
 * Create an account and log in.
+* Create/Add ride offers.
+* View the requests to the ride offer  created.
+* Chhose to either accept or reject a ride request.
 
 ### How to test the UI
 
@@ -41,3 +48,5 @@ On a  terminal (Linux):
 
 #### Pivotal tracker stories.
 [##4000269](https://www.pivotaltracker.com/epic/show/4000269)
+[##4000272](https://www.pivotaltracker.com/epic/show/4000272)
+[##4000273](https://www.pivotaltracker.com/epic/show/4000273)
