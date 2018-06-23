@@ -109,14 +109,13 @@ tr:hover {
 }
 
 button {
-    width: 50%;
     background-color: black;
     color: skyblue;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    float: left;
+    font-size: 100%;
 }
 
 button:hover {
