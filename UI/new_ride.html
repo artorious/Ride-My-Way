@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ride my Way | Carpool | Ride sharing</title>
+  <title>RideMyWay | Carpool | Ride sharing | co traveling | Ride my Way</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" 
     href="static/main.css" />
@@ -12,25 +12,18 @@
 <body>
 <div class="page">
   <header>
-    <h1>RideMyWay</h1>
-    <p>
-      A carpooling web application that provides drivers with the ability to 
-      create ride offers and passengers to join available ride offers.
-    </p>
+    <h1>RideMyWay&trade;</h1>
   </header>
   <hr>
   <nav>
-    <a href="drivers_landing.html">Back to rides</a> |
-    <a href="index.html">Sign Out</a>
-    <a href="#">
-      <img src="static/avatar.png" alt="Default user avatar">
+    <a href="drivers_landing.html">
+      <button>Back to rides</button>
+    </a> 
+    <a href="index.html">
+      <button>Sign Out</button>
     </a>
   </nav>
-  <article>
-    <div>
-      <h3>{username} - Create new ride offer</h3>
-    </div>
-  </article>
+  <h3>Create new ride offer</h3>
   <hr>
   <div class="container">
     <form action="drivers_landing.html">
@@ -57,12 +50,22 @@
           </div>
         <div class="row">
           <div class="col-25">
-            <label for="departurePoint">Deparure Point:</label>
+            <label for="departurePoint">Departure Point:</label>
           </div>
           <div class="col-75">
             <input id="departurePoint" type="text" name="departurePoint" 
             required autofocus 
               placeholder=" Starting location">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="rideCost">Cost:</label>
+          </div>
+          <div class="col-75">
+            <input id="rideCost" type="text" name="rideCost" 
+            required autofocus 
+              placeholder=" Cost in Kshs">
           </div>
         </div>
         <div class="row">
@@ -76,14 +79,44 @@
         </div>
         </div>
         <div class="row">
-        <div class="col-25">
-            <label for="rideRoute">Route:</label>
+          <div class="col-25">
+              <label for="rideRoute">Route:</label>
+          </div>
+          <div class="col-75">
+              <input id="rideRoute" type="text" name="rideRoute" 
+              required autofocus 
+              placeholder=" Route to take">
+          </div>
         </div>
-        <div class="col-75">
-            <input id="rideRoute" type="text" name="rideRoute" 
+        <div class="row">
+          <div class="col-25">
+              <label for="ridepreferences">Preferences:</label>
+          </div>
+          <div class="col-75">
+              <input id="rridepreferences" type="text" name="ridepreferences" 
+              required autofocus 
+              placeholder=" Smoking? Pets? Music?">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+              <label for="rideDetours">Route:</label>
+          </div>
+          <div class="col-75">
+              <input id="rideDetours" type="text" name="rideDetours" 
+              required autofocus 
+              placeholder=" Time in minutes">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="carDescription">Car Dscription:</label>
+          </div>
+          <div class="col-75">
+            <input id="carDescription" type="text" name="carDescription" 
             required autofocus 
-            placeholder=" Route to take">
-        </div>
+              placeholder=" Registration, Make, Model, Color">
+          </div>
         </div>
         <div class="row"><hr></div>
         <div class="row">
