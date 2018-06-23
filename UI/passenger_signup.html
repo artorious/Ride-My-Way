@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ride my Way | Carpool | Ride sharing</title>
+  <title>RideMyWay | Carpool | Ride sharing co-travelling | Ride my way</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" 
     href="static/main.css" />
@@ -12,26 +12,22 @@
 <body>
 <div class="page">
   <header>
-    <h1>RideMyWay</h1>
-    <p>
-      A carpooling web application that provides drivers with the ability to 
-      create ride offers and passengers to join available ride offers.
-    </p>
+    <h1>RideMyWay&trade;</h1>
   </header>
   <hr>
   <nav>
-    <a href="index.html">Home</a> |
-    <a href="index.html">User Sign In</a>
-    <a href="#">
-      <img src="static/avatar.png" alt="Default user avatar">
+    <a href="index.html">
+      <button>Home</button>
+    </a>
+    <a href="index.html">
+      <button>User Sign In</button>
     </a>
   </nav>
   <article>
     <div>
-      <h3>Welcome - New user Registration</h3>
+      <h3>New user Registration</h3>
       <p>
-        Register an account to join our network of carpooling enthuthiasts. 
-        Our network of vetted drivers is widely spread across the country.
+        Your journey starts here.<strong>Join</strong> our network.
       </p>
     </div>
   </article>
@@ -42,31 +38,11 @@
         <legend>User Registration</legend>
         <div class="row">
           <div class="col-25">
-            <label for="firstName">First Name:</label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="name" name="name" 
-            placeholder="Johnathan" required autofocus
-          >
-        </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
-            <label for="lastName">Last Name:</label>
-          </div>
-          <div class="col-75">
-            <input type="text" id="name" name="name" 
-              placeholder="Smith" required autofocus
-            >
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-25">
             <label for="username">Username :</label>
           </div>
           <div class="col-75">
             <input type="text" id="username" name="user_name" 
-              placeholder="@JohnSmith" required autofocus
+              placeholder="johnSmith" required autofocus
             >
           </div>
         </div>
@@ -78,6 +54,16 @@
             <input type="email" id="userEmail" name="userEmail" 
               placeholder="JohnSmith@email.com" required autofocus
             >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="passengerCell">Mobile No:</label>
+          </div>
+          <div class="col-75">
+            <input type="tel" id="passengerCell" name="passengerCell" placeholder="0727161173" 
+              required autofocus
+            >    
           </div>
         </div>
         <div class="row">
