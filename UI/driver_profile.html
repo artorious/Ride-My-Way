@@ -3,8 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ride my Way | Carpool | Ride sharing</title>
+  <title>RideMyWay | Carpool | Ride sharing | co-travelling</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" media="screen" 
     href="static/main.css" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -13,120 +15,64 @@
 <div class="page">
   <header>
     <h1>RideMyWay</h1>
-    <p>
-      A carpooling web application that provides drivers with the ability to 
-      create ride offers and passengers to join available ride offers.
-    </p>
   </header>
   <hr>
   <nav>
-    <a href="drivers_landing.html">Back to Rides</a> |
-    <a href="index.html">Sign out</a>
-    <a href="#">
-      <img src="static/avatar.png" alt="Default user avatar">
-    </a>
+    <a href="drivers_landing.html"><button>Back to Rides</button></a>
+    <a href="index.html"><button>Sign out</button></a>        
   </nav>
-    <h3>{Username} - Profile page</h3>
-  <hr>
-  <table class="long-x-axis">
-    <tr>
-      <th>Driver's Account Details</th>
-      <th>
-        <a href="update_driver_profile.html">
-          <button type="button" class="update-button">
-            Update Account Details
-          </button>
+  <div clas="container-clear">
+    <article>
+      <span>
+        <a href="static/avatar.png">
+          <img src="static/avatar.png" alt="Default user avatar">
         </a>
-      </th>
-    </tr>
-    <tr>
-      <td>Username</td>
-      <td>arthur</td>
-    </tr>
-    <tr>
-      <td>First Name</td>
-      <td>Arthur</td>
-    </tr>
-    <tr>
-      <td>Last Name</td>
-      <td>Ngondo</td>
-    </tr>
-    <tr>
-      <td>Mobile No.</td>
-      <td>0727161173</td>
-    </tr>
-    <tr>
-      <td>Email</td>
-      <td>arthur@email.com</td>
-    </tr>
-    <tr>
-      <td>Driver ID</td>
-      <td>54321</td>
-    </tr>
-    <tr>
-      <td>Liscence No</td>
-      <td>A00Gx1773</td>
-  </table>
-  <hr>
-  
-  <hr>
-  <table class="long-x-axis">
-    <th colspan="3">Active Rides - Click on Name to call</th>
-    <tr>
-      <th>Passenger's Name</th>
-      <th>Pickup Location</th>
-      <th>Date</th>
-    </tr>
-    <tr>
-      <td><a href="tel:+254-770-771-164">Wanjiku</a> </td>
-      <td>Ruiru</td>
-      <td>01-01-2018</td>
-    </tr>
-    <tr>
-      <td><a href="tel:+254-727-161-173">Anthony</a></td>
-      <td>Utawala</td>
-      <td>01-01-2018</td>
-    </tr>
-    <tr>
-      <td><a href="#">Claire</a></td>
-      <td>Thika Rd Mall</td>
-      <td>02-01-2018</td>
-    </tr>
-    <tr>
-      <td><a href="#">Timothy</a></td>
-      <td>John-Saga</td>
-      <td>02-01-2018</td>
-    </tr>
-  </table>
-  <hr>
-  <table class="long-x-axis">
-    <th colspan="3">Passenger History log</th>
-    <tr>
-      <th>Passenger's Name</th>
-      <th>Pickup Location</th>
-      <th>Date</th>
-    </tr>
-    <tr>
-      <td>Wamathai</td>
-      <td>Ruaraka</td>
-      <td>01-12-2017</td>
-    </tr>
-    <tr>
-      <td>Cacius</td>
-      <td>Tena Estate</td>
-      <td>29-11-2017</td>
-    </tr>
-    <tr>
-      <td>Gabriel</td>
-      <td>Kabete</td>
-      <td>27-11-2017</td>
-    </tr>
-    <tr>
-      <td>Jomeness</td>
-      <td>Limuru</td>
-      <td>11-11-2017</td>
-    </tr>
-  </table>
+        <h2>arthur</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+      </span>
+      <hr>
+      <div class="row">
+          <div class="col-75">
+              <p><strong>Arthur Ngondo Waithaka</strong>  |
+              <strong>D.O.B: </Strong> 9th June
+              </p>
+          </div>
+            <div class="col-75">      
+              <p>
+                <a href="drivers_landing.html"><i class="fa fa-car"></i></a> 5  |
+                <a href="#"><i class="fa fa-file"></i></a> 2  |
+                <a href="#"><i class="fa fa-heart"></i></a> 7  |
+                <a href="#"><i class="fa fa-envelope"></i></a>  2 | 
+              </p>
+            
+            </div>
+      </div>
+      <br>
+      <hr>
+      
+      <p>
+        <strong> Bio</strong><br>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+      <hr>
+      <p>
+        <strong>EMAIL: </strong>
+        <a href="mailto:ngondoarthur@gmail.com">ngondoarthur@gmail.com</a>
+      </p>
+      <p>
+        <strong>PHONE NUMBER:</strong>
+        <a href="tel:0727161173">0727161173</a>
+      </p>
+      <hr>
+      <span>
+        <a href="#"><button>Update Profile</button></a>
+      </span>
+    </article>
+
   <hr>
   <footer>&copy;RideMyWay 2018.<br><a href="#">Contact Us.</a></footer>
 </div>

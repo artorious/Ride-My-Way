@@ -135,6 +135,13 @@ button:hover {
     margin: auto;
 }
 
+.container-clear {
+    border-color: black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: auto;
+}
+
 .col-25 {
     float: left;
     width: 25%;
@@ -176,7 +183,7 @@ button:hover {
 
 /* Handle forms on widescreens */
 @media screen and (min-width: 769px){
-    .container {
+    .container, .container-clear {
         width: 75%;        
     }
 }
@@ -184,4 +191,9 @@ button:hover {
 /* Handle wide tables */
 .long-x-axis {
     overflow-x: auto;
+}
+
+/* Rating stars */
+.checked {
+    color: orange;
 }
