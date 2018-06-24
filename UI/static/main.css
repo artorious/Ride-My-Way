@@ -123,6 +123,9 @@ button:hover {
     color: black;
 }
 
+a {
+    text-decoration: none;
+}
 .page {
     width: 100%;
     height: 100%;
@@ -184,4 +187,10 @@ button:hover {
 /* Handle wide tables */
 .long-x-axis {
     overflow-x: auto;
+}
+
+
+/* ratings stars */
+.checked {
+    color: orange;
 }
