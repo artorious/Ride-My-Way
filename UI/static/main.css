@@ -76,6 +76,10 @@ footer {
     text-align: center;   
 }
 
+a {
+    text-decoration: none;
+}
+
 footer a {
     color: skyblue;
 }
