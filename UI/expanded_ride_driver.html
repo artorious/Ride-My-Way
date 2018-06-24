@@ -24,88 +24,77 @@
       <button>Sign out</button>
     </a>
   </nav>
-  <h3>Manage ride offer</h3>
+  <h2>Manage ride offer</h2>
   <hr>
-  <table class="long-x-axis">
-  
-    <tr>
-      <td>Departure Point:</td>
-      <td>Umoja I Estate</td>
-    </tr>
-    <tr>
-      <td>Final Destination:</td>
-      <td>Kangema Town</td>
-    </tr>
-    <tr>
-      <td>Date of travel:</td>
-      <td>08-08-2018</td>
-    </tr>
-    <tr>
-      <td>Departure Time:</td>
-      <td>07:00AM</td>
-    </tr>
-    <tr>
-      <td>cost:</td>
-      <td>Kshs. 200</td>
-    </tr>
-    <tr>
-      <td>Available seats:</td>
-      <td>3</td>
-    </tr>
-
-  </table>
-  <hr>
-  <table class="long-x-axis">
-    <th colspan="4">Passenger Requests waiting approval</th>
-    <tr>
-      <td>
-        <a href="tel:0727161173"><i class="fa fa-phone"></i> Wanjiku Kawira</a>
-      </td>
-      <td>2 Seats</td>
-      <td>
-        <select name="driverResponse" onchange="">
-          <option value="driverResponse" selected>Status</option>
-          <option value="acceptPassenger">Accept</option>
-          <option value="rejectPassenger">Reject</option>  
-        </select>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="tel:0727161173"><i class="fa fa-phone"></i> Anthony Kamau</a>
-      
-      </td>
-      <td>1 seat</td>
-      <td>
-        <select name="driverResponse" onchange="">
-          <option value="driverResponse" selected>Status</option>
-          <option value="acceptPassenger">Accept</option>
-          <option value="rejectPassenger">Reject</option>  
-        </select>
-      </td>
-    </tr>
-    <tr><td colspan="3"> &nbsp;</td></tr>
-    
-  </table>
-  <hr>
-  <div>
-    
+  <div class="long-x-axis">
+    <table >
+      <caption>Current open ride</caption>
+      <tr>
+        <td>Departure Point:</td>
+        <td>Umoja I Estate</td>
+      </tr>
+      <tr>
+        <td>Final Destination:</td>
+        <td>Kangema Town</td>
+      </tr>
+      <tr>
+        <td>Date of travel:</td>
+        <td>08-08-2018</td>
+      </tr>
+      <tr>
+        <td>Departure Time:</td>
+        <td>07:00AM</td>
+      </tr>
+      <tr>
+        <td>cost:</td>
+        <td>Kshs. 200</td>
+      </tr>
+      <tr>
+        <td>Available seats:</td>
+        <td>3</td>
+      </tr>
+      <tr><td colspan="2">&nbsp;</td></tr>
+    </table>
     <select name="rideStatus" id="rideStatus" onchange="">
       <option value="openRide" selected>Ride Status: Open</option>
       <option value="closedRide">Ride Status: Closed</option>
     </select>
+  </div>
+  <hr>
+  <div class="long-x-axis">
+    <table>
+      <th colspan="4">Passenger Requests waiting approval</th>
+      <tr>
+        <td>
+          <a href="tel:0727161173"><i class="fa fa-phone"></i> Wanjiku Kawira</a>
+        </td>
+        <td>2 Seats</td>
+        <td>
+          <select name="driverResponse" onchange="">
+            <option value="driverResponse" selected>Status</option>
+            <option value="acceptPassenger">Accept</option>
+            <option value="rejectPassenger">Reject</option>  
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="tel:0727161173"><i class="fa fa-phone"></i> Anthony Kamau</a>
+        </td>
+        <td>1 seat</td>
+        <td>
+          <select name="driverResponse" onchange="">
+            <option value="driverResponse" selected>Status</option>
+            <option value="acceptPassenger">Accept</option>
+            <option value="rejectPassenger">Reject</option>  
+          </select>
+        </td>
+      </tr>
+      <tr><td colspan="3"> &nbsp;</td></tr> 
+    </table>
     <a href="#"><button>Edit</button></a>
     <a href="#"><button>Delete</button></a>
-  <!--
-  <hr>
-  <div class="row">
-    <div>
-      <select name="rideStatus" id="rideStatus" onchange="">
-        <option value="openRide" selected>Ride Status: Open</option>
-        <option value="closedRide">Ride Status: Closed</option>
-      </select>
-    </div>
-  </div> -->
+  </div>
   <hr>
   <footer>&copy;RideMyWay 2018.<br><a href="#">Contact Us.</a></footer>
 </div>
