@@ -9,6 +9,7 @@ html {
     background-color: white;
     color: black;
     margin: 5px;
+    font-size: 110
 }
 
 body { 
@@ -190,9 +191,12 @@ button:hover {
 
 /* Handle wide tables */
 .long-x-axis {
-    overflow-x: auto;
+    max-width: 570px;
+    margin: auto;
+    padding: 10px;
+    
 }
-
+    
 /* Rating stars */
 .checked {
     color: orange;
