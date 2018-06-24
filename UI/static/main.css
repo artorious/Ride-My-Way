@@ -76,9 +76,14 @@ footer {
     text-align: center;   
 }
 
+a {
+    text-decoration: none;
+}
+
 footer a {
     color: skyblue;
 }
+
 
 table {
     border-spacing: 1px;
