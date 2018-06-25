@@ -9,7 +9,7 @@ html {
     background-color: white;
     color: black;
     margin: 5px;
-    font-size: 110%
+    font-size: 110%;
 }
 
 body { 
@@ -32,8 +32,11 @@ header {
 }
 
 nav {
+    flex-flow: column;
+    margin: auto;
     float: right;
-} 
+}
+ 
 
 article {
     padding: 20px;
@@ -77,9 +80,14 @@ footer {
     text-align: center;   
 }
 
+a {
+    text-decoration: none;
+}
+
 footer a {
     color: skyblue;
 }
+
 
 table {
     border-spacing: 1px;
@@ -110,6 +118,7 @@ tr:hover {
 }
 
 button {
+    margin: auto;
     background-color: black;
     color: skyblue;
     padding: 12px 20px;
@@ -117,6 +126,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 100%;
+    flex-grow: inherit;
 }
 
 button:hover {
@@ -127,6 +137,7 @@ button:hover {
 a {
     text-decoration: none;
 }
+
 .page {
     width: 100%;
     height: 100%;
@@ -135,6 +146,13 @@ a {
 .container {
     border-radius: 5px;
     background-color: skyblue;
+    padding: 20px;
+    margin: auto;
+}
+
+.container-clear {
+    border-color: black;
+    border-radius: 5px;
     padding: 20px;
     margin: auto;
 }
@@ -172,7 +190,7 @@ a {
 
 /* Handle screens under 600px - Stack columns */
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit], .long-x-axis {
+    .col-25, .col-75, input[type=submit], {
         width: 100%;
         margin-top: 0;
     }
@@ -180,11 +198,20 @@ a {
 
 /* Handle forms on widescreens */
 @media screen and (min-width: 769px){
-    .container {
+    .container, .container-clear {
         width: 75%;        
     }
 }
 
+.long-x-axis {
+    max-width: 570px;
+    margin: auto;
+    padding: 10px;
+    overflow-x: auto;
+ 
+.checked {
+    color: orange;
+}
 
 @media screen and (min-width: 769px){
     .long-x-axis {
@@ -193,9 +220,4 @@ a {
         padding: 10px;
         overflow-x: auto;
     }
-}
-
-/* ratings stars */
-.checked {
-    color: orange;
 }
