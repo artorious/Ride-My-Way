@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Ride my Way | Carpool | Ride sharing</title>
+  <title>RideMyWay | Carpool | Ride sharing | co-travelling | Ride my Way</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" 
     href="static/main.css" />
@@ -12,107 +12,99 @@
 <body>
 <div class="page">
   <header>
-    <h1>RideMyWay</h1>
-    <p>
-      A carpooling web application that provides drivers with the ability to 
-      create ride offers and passengers to join available ride offers.
-    </p>
+    <h1>RideMyWay&trade;</h1>
   </header>
   <hr>
   <nav>
-    <a href="index.html">Sign Out</a> |
-    <a href="passenger_profile.html">Profile</a>
-    <a href="#">
-      <img src="static/avatar.png" alt="Default user avatar">
+    <a href="index.html">
+      <button>Sign Out</button>
+    </a>
+    <a href="passenger_profile.html">
+      <button>Profile</button>  
     </a>
   </nav>
-  <article>
-    <div>
-      <h3>Want to request a ride?</h3>
-      <p>
-        Click on <strong>Ride ID</strong> of any ride below to make a request.
-      </p>
-    </div>
-  </article>
+    <h3>Request a ride</h3>
   <hr>
-  <div class="long-x-axis">
-    <table>
+  
+  <form  class="container" action="#">
+    <table class="long-x-axis">
       <tr>
-        <th colspan="7">Available/Open Rides by drivers in our network</th>
-      </tr>
-      <td colspan="7">
+        <td>
           <form action="#">
-            <label for="filterRidesByDriver">Customize the available rides to display - Sort by Drivers:</label>
+            <label for="filterRidesByDriver">Customize your search :</label>
             <select name="filterRidesByDriver" id="filterRidesByDriver" onchange="">
               <option value="allDrivers" selected>Rides from all Drivers</option>
               <option value="networkDrivers">Rides from drivers in your network only</option>
             </select>
           </form>
         </td>
-      <tr>
-        <th>Date</th>
-        <th>Ride ID</th>
-        <th>Driver</th>
-        <th>Departure Point</th>
-        <th>Departure Time</th>
-        <th>Final Destination</th>
-        <th>Route to take</th>
-      </tr>
-      <tr>
-        <th>01-01-2018</th>
-        <td><a href="expanded_ride_passenger.html">#1</a></td>
-        <td>arthur</td>
-        <td>Thika Rd Mall</td>
-        <td>07:00 AM</td>
-        <td>Upper Hill</td>
-        <td>Eastern By-pass</td>
-      </tr>
-      <tr>
-        <th>01-01-2018</th>
-        <td><a href="expanded_ride_passenger.html">#2</a></td>
-        <td>Kevin</td>
-        <td>Diamond Plaza</td>
-        <td>08:00 AM</td>
-        <td>Westlands</td>
-        <td>Peponi Rd</td>
-      </tr>
-      <tr>
-        <th>01-01-2018</th>
-        <td><a href="expanded_ride_passenger.html">#3</a></td>
-        <td>Kimani</td>
-        <td>Athi River</td>
-        <td>05:00 AM</td>
-        <td>Kikuyu Town</td>
-        <td>Northern By-pass</td>
-      </tr>
-      <tr>
-        <th>01-01-2018</th>
-        <td><a href="expanded_ride_passenger.html">#4</a></td>
-        <td>Karanja</td>
-        <td>Umoja I</td>
-        <td>05:00 AM</td>
-        <td>Nairobi CBD</td>
-        <td>Jogoo Rd</td>
-      </tr>
-      <tr>
-        <th>02-01-2018</th>
-        <td><a href="expanded_ride_passenger.html">#5</a></td>
-        <td>Kendick</td>
-        <td>Thika</td>
-        <td>10:00 AM</td>
-        <td>Ngong</td>
-        <td>Western By-pass</td>
-      </tr>
-      <tr>
-        <th>03-01-2018</th>
-        <td><a href="expanded_ride_passenger.html">#6</a></td>
-        <td>Collins</td>
-        <td>Murang'a Town</td>
-        <td>07:00 AM</td>
-        <td>Nairobi CBD</td>
-        <td>Mai-Mahiu</td>
       </tr>
     </table>
+    <fieldset>
+      <div class="row">
+        <div class="col-25">
+          <label for="rideDate">Date of Ride:</label>
+        </div>
+        <div class="col-75">
+          <input type="date" id="rideDate" name="rideDate" 
+            placeholder="DD-MM-YY" autofocus>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-25">
+            <label for="rideStartTime">Departure Time:</label>
+          </div>
+          <div class="col-75">
+            <input id="rideStartTime" type="time" name="rideStartTime" 
+              required autofocus 
+              placeholder="00:00 AM/PM">
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="departurePoint">Deparure Point:</label>
+        </div>
+        <div class="col-75">
+          <input id="departurePoint" type="text" name="departurePoint" 
+          required autofocus 
+            placeholder=" Starting location">
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+          <label for="departurePoint">Deparure Point:</label>
+      </div>
+      <div class="col-75">
+          <input id="finalDestination" type="text" name="finalDestination" 
+          required autofocus 
+          placeholder=" Finishing location">
+      </div>
+      </div>
+      <div class="row">
+      <div class="col-25">
+          <label for="rideseats">No. of seats:</label>
+      </div>
+      <div class="col-75">
+          <input id="rideseats" type="text" name="rideseats" 
+          required autofocus 
+          placeholder=" 1 - 4">
+      </div>
+      <div class="row"><hr></div>
+      <div class="row"><hr></div>
+      <div>
+          <input id="emailAlert" type="checkbox" required>
+          <label for="emailAlert">
+              Receive email alert when new rides matching search are offered.
+            </label>
+      </div>
+      </div>
+      <div class="row"><hr></div>
+      <div class="row">
+        <input type="submit" value="Search"> 
+      </div>
+      
+    </fieldset>
+  </form>
   </div>
   <hr>
   <footer>&copy;RideMyWay 2018.<br><a href="#">Contact Us.</a></footer>
