@@ -9,6 +9,7 @@ html {
     background-color: white;
     color: black;
     margin: 5px;
+    font-size: 110%
 }
 
 body { 
@@ -109,14 +110,13 @@ tr:hover {
 }
 
 button {
-    width: 50%;
     background-color: black;
     color: skyblue;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    float: left;
+    font-size: 100%;
 }
 
 button:hover {
@@ -124,6 +124,9 @@ button:hover {
     color: black;
 }
 
+a {
+    text-decoration: none;
+}
 .page {
     width: 100%;
     height: 100%;
@@ -169,7 +172,7 @@ button:hover {
 
 /* Handle screens under 600px - Stack columns */
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col-25, .col-75, input[type=submit], .long-x-axis {
         width: 100%;
         margin-top: 0;
     }
@@ -182,7 +185,17 @@ button:hover {
     }
 }
 
-/* Handle wide tables */
-.long-x-axis {
-    overflow-x: auto;
+
+@media screen and (min-width: 769px){
+    .long-x-axis {
+        max-width: 570px;
+        margin: auto;
+        padding: 10px;
+        overflow-x: auto;
+    }
+}
+
+/* ratings stars */
+.checked {
+    color: orange;
 }
