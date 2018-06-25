@@ -32,8 +32,11 @@ header {
 }
 
 nav {
+    flex-flow: column;
+    margin: auto;
     float: right;
-} 
+}
+ 
 
 article {
     padding: 20px;
@@ -85,6 +88,7 @@ footer a {
     color: skyblue;
 }
 
+
 table {
     border-spacing: 1px;
     width: 100%;
@@ -114,6 +118,7 @@ tr:hover {
 }
 
 button {
+    margin: auto;
     background-color: black;
     color: skyblue;
     padding: 12px 20px;
@@ -121,11 +126,16 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 100%;
+    flex-grow: inherit;
 }
 
 button:hover {
     background-color: white;
     color: black;
+}
+
+a {
+    text-decoration: none;
 }
 
 .page {
@@ -173,7 +183,7 @@ button:hover {
 
 /* Handle screens under 600px - Stack columns */
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col-25, .col-75, input[type=submit], {
         width: 100%;
         margin-top: 0;
     }
@@ -181,15 +191,17 @@ button:hover {
 
 /* Handle forms on widescreens */
 @media screen and (min-width: 769px){
-    .container {
+    .container,  {
         width: 75%;        
     }
 }
 
-    
 .long-x-axis {
     max-width: 570px;
     margin: auto;
     padding: 10px;
     overflow-x: auto;
 }
+
+
+
