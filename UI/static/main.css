@@ -9,6 +9,7 @@ html {
     background-color: white;
     color: black;
     margin: 5px;
+    font-size: 110%;
 }
 
 body { 
@@ -31,8 +32,11 @@ header {
 }
 
 nav {
+    flex-flow: column;
+    margin: auto;
     float: right;
-} 
+}
+ 
 
 article {
     padding: 20px;
@@ -114,6 +118,7 @@ tr:hover {
 }
 
 button {
+    margin: auto;
     background-color: black;
     color: skyblue;
     padding: 12px 20px;
@@ -121,11 +126,16 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 100%;
+    flex-grow: inherit;
 }
 
 button:hover {
     background-color: white;
     color: black;
+}
+
+a {
+    text-decoration: none;
 }
 
 .page {
@@ -173,7 +183,7 @@ button:hover {
 
 /* Handle screens under 600px - Stack columns */
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col-25, .col-75, input[type=submit], {
         width: 100%;
         margin-top: 0;
     }
@@ -181,12 +191,16 @@ button:hover {
 
 /* Handle forms on widescreens */
 @media screen and (min-width: 769px){
-    .container {
+    .container,  {
         width: 75%;        
     }
 }
 
-/* Handle wide tables */
 .long-x-axis {
-    overflow-x: auto;
+    max-width: 570px;
+    margin: auto;
+    padding: 10px;
 }
+
+
+
