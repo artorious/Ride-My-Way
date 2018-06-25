@@ -172,7 +172,7 @@ a {
 
 /* Handle screens under 600px - Stack columns */
 @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col-25, .col-75, input[type=submit], .long-x-axis {
         width: 100%;
         margin-top: 0;
     }
@@ -185,13 +185,15 @@ a {
     }
 }
 
-.long-x-axis {
-    max-width: 570px;
-    margin: auto;
-    padding: 10px;
-    overflow-x: auto;
-}
 
+@media screen and (min-width: 769px){
+    .long-x-axis {
+        max-width: 570px;
+        margin: auto;
+        padding: 10px;
+        overflow-x: auto;
+    }
+}
 
 /* ratings stars */
 .checked {
