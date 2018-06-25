@@ -27,7 +27,9 @@ header {
     border: 5px solid skyblue;
     text-align: left; 
     border-radius: 5px; 
-    padding: 20px; 
+    padding: 20px;
+    font-size: 100%;
+    text-align: center; 
 }
 
 nav {
@@ -185,3 +187,19 @@ button:hover {
 .long-x-axis {
     overflow-x: auto;
 }
+
+a {
+    text-decoration: none;
+}
+
+.nav-btn {
+    border: none;
+    color: black;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 100%;
+    cursor: pointer;
+    display: inline inline-block;
+}
+
+.nav-btn:hover {background:skyblue}
