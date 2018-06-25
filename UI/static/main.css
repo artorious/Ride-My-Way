@@ -214,4 +214,11 @@ a {
 }
 
 
-
+@media screen and (min-width: 769px){
+    .long-x-axis {
+        max-width: 570px;
+        margin: auto;
+        padding: 10px;
+        overflow-x: auto;
+    }
+}
