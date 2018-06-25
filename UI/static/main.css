@@ -76,9 +76,14 @@ footer {
     text-align: center;   
 }
 
+a {
+    text-decoration: none;
+}
+
 footer a {
     color: skyblue;
 }
+
 
 table {
     border-spacing: 1px;
@@ -109,14 +114,13 @@ tr:hover {
 }
 
 button {
-    width: 50%;
     background-color: black;
     color: skyblue;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    float: left;
+    font-size: 100%;
 }
 
 button:hover {
