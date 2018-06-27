@@ -205,12 +205,6 @@ a {
     }
 }
 
-.long-x-axis {
-    max-width: 570px;
-    margin: auto;
-    padding: 10px;
-    overflow-x: auto;
- 
 .checked {
     color: orange;
 }
@@ -222,10 +216,6 @@ a {
         padding: 10px;
         overflow-x: auto;
     }
-}
-
-a {
-    text-decoration: none;
 }
 
 .nav-btn {
