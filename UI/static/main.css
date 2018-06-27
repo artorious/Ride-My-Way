@@ -30,6 +30,7 @@ header {
     border-radius: 5px; 
     padding: 20px;
     font-size: 100%;
+    text-align: center; 
 }
 
 nav {
@@ -221,6 +222,10 @@ a {
         padding: 10px;
         overflow-x: auto;
     }
+}
+
+a {
+    text-decoration: none;
 }
 
 .nav-btn {
