@@ -26,9 +26,10 @@ header {
     background-color: black;
     color: skyblue;
     border: 5px solid skyblue;
-    text-align: left; 
+    text-align: center; 
     border-radius: 5px; 
-    padding: 20px; 
+    padding: 20px;
+    font-size: 100%;
 }
 
 nav {
@@ -221,3 +222,15 @@ a {
         overflow-x: auto;
     }
 }
+
+.nav-btn {
+    border: none;
+    color: black;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 100%;
+    cursor: pointer;
+    display: inline inline-block;
+}
+
+.nav-btn:hover {background:skyblue}
